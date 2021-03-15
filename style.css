@@ -7,6 +7,75 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    /* background-color: lightcoral; */
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.lg-font {
+    font-size: 1.5em;
+    color: white!important;
+    font-weight: 900;
+}
+
+.info {
+    font-size: 1.2em;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em!important;
+    line-height: 2.5rem;
+    width: fit-content;
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+    white-space: normal;
+}
+
+.quote-writer {
+    font-style: normal;
+    line-height: 5rem;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+}
+
+#purpose {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 1.3em;
+}
+
+
+.md-font {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: white!important;
+}
+
+footer a:hover {
+    color: rgb(172, 164, 164)!important;
+}
+
+footer li {
+    list-style-type: none;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -284,7 +353,7 @@ a:hover {
 }
 
 #bloc-2-services p {
-    font-size: 11px;
+    font-size: 1em;
 }
 
 .navbar {
@@ -323,18 +392,27 @@ a:hover {
 }
 
 .nav > li {
-    float: left;
-    margin-top: 4px;
-    font-size: 16px;
+    /* float: left; */
+    margin-top: 0.3rem;
+    font-size: 1.2em;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
 
-.nav > li a:hover,
+.nav > li a:hover {
+    text-decoration: underline;
+    background: transparent;
+}
+
 .nav > li a:focus {
     background: transparent;
+    border: 2px solid black;            
+}
+
+.nav > li a:active {
+    border: 2px solid black;    
 }
 
 .navbar-toggle {
@@ -387,7 +465,7 @@ a:hover {
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
     .nav-center .nav > li {
-        float: none;
+        /* float: none; */
         display: inline-block;
     }
     .nav-center .site-navigation {
@@ -639,7 +717,7 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -647,16 +725,15 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black;
 }
 
-.container {
+/* .container {
     max-width: 1000px;
-}
+} */
 
 .hero-bloc-text {
     font-size: 38px;
@@ -677,7 +754,7 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .tight-width-whitespace {
@@ -686,7 +763,6 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
     font-family: "Open Sans";
 }
 
@@ -701,7 +777,13 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#social-icons {
+    margin-bottom: 5rem;
 }
 
 h2 {
@@ -722,9 +804,6 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
 
 h4 {
     color: #333333!important;
@@ -749,12 +828,13 @@ h4 {
 }
 
 .avatar {
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 9px rgba(5, 5, 5, 0.329);
 }
 
 .black-background {
-    background-color: rgba(35, 31, 32, 0.7);
+    background-color: rgba(7, 7, 7, 0.7);
     padding: 40px 40px 40px 40px;
+    opacity: 1;
 }
 
 .bold-link {
@@ -769,7 +849,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: #FFFFFF;
+    /* background-color: lightblue; */
 }
 
 .bgc-dark-slate-blue {
@@ -781,17 +861,35 @@ h4 {
 }
 
 .tc-white {
-    color: #364577!important;
+    color: #fff!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #364577;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine-og {
+    background: #f1753b;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine-og:hover {
+    background: #f5966a;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #6a7aaf!important;
     color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine:focus {
+    border: 4px solid white;    
+}
+
+.btn-atomic-tangerine:active {
+    border: 4px solid white;    
 }
 
 .ltc-white {
@@ -803,11 +901,16 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #364577!important;
 }
 
 .ltc-atomic-tangerine:hover {
     color: #c27956!important;
+    text-decoration: underline;
+}
+
+.ltc-atomic-tangerine:focus {
+    border: 4px solid white;
 }
 
 .icon-dark-slate-blue {
@@ -815,20 +918,20 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
+/* .bg-dots-bg {
     background-image: url("img/dots-bg.png");
-}
+} */
 
-.bg-lines-h2-bg {
+/* .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}
+} */
 
 .bg-atlanta-20made-20sign {
-    background-image: url("img/atlanta%20made%20sign.jpg");
+    background-image: url("img/sign.webp");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta%20made%20sign%20orange.jpg");
+    background-image: url("img/sign_orange.webp");
 }
 
 @media (max-width: 1024px) {
