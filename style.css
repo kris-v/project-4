@@ -2,16 +2,16 @@
     font-family: 'et-line';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/et-line.woff') format('woff'),
-         url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+    src: url('./fonts/et-line.woff') format('woff');
+    font-display: swap;
   }
 
   @font-face {
-    font-family: 'fontawesome';
+    font-family: 'fontawesome-webfont';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/et-line.woff') format('woff'),
-         url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+    src: url('./fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+    font-display: swap;
   }
 
 body {
@@ -407,7 +407,7 @@ a:hover {
 }
 
 .nav > li {
-    /* float: left; */
+    float: left;
     margin-top: 0.3rem;
     font-size: 1.2em;
 }
