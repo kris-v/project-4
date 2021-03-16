@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'et-line';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/et-line.woff') format('woff'),
+         url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'fontawesome';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/et-line.woff') format('woff'),
+         url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +22,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 
 h1 {
     color: #fff;
@@ -402,17 +417,11 @@ a:hover {
 }
 
 .nav > li a:hover {
-    text-decoration: underline;
     background: transparent;
 }
 
 .nav > li a:focus {
-    background: transparent;
-    border: 2px solid black;            
-}
-
-.nav > li a:active {
-    border: 2px solid black;    
+    background: transparent;         
 }
 
 .navbar-toggle {
@@ -906,7 +915,6 @@ h4 {
 
 .ltc-atomic-tangerine:hover {
     color: #c27956!important;
-    text-decoration: underline;
 }
 
 .ltc-atomic-tangerine:focus {
