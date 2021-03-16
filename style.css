@@ -7,16 +7,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-    font-family: 'et-line';
-    src: url(/fonts/et-line.woff) format('woff'),
-         url(/fonts/et-line.eot) format('eot');
-}
-
-@font-face {
-    font-family: 'fontawesome-webfont';
-    src: url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2');
-}
 
 h1 {
     color: #fff;
